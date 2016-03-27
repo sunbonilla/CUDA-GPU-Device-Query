@@ -13,18 +13,17 @@ void query_GPUs() {
         printf("  Total shared memory per block: %u\n",  prop.sharedMemPerBlock);
         printf("  Total registers per block: %d\n",  prop.regsPerBlock);
         printf("  Warp size: %d\n",  prop.warpSize);
-        printf("  Maximum memory pitch: %u\n",  prop.memPitch);
         printf("  Maximum threads per block: %d\n",  prop.maxThreadsPerBlock);
         printf("  Clock rate (KHz): %d\n",  prop.clockRate);
         printf("  Memory Clock Rate (KHz): %d\n", prop.memoryClockRate);
         printf("  Memory Bus Width (bits): %d\n", prop.memoryBusWidth);
         printf("  Total VRAM (Bytes): %u\n",  prop.totalGlobalMem);
-        printf("  Total constant memory (Bytes): %u\n",  pro.totalConstMem);
+        printf("  Total constant memory (Bytes): %u\n",  prop.totalConstMem);
         printf("  Number of SMs: %d\n", prop.multiProcessorCount);
         printf("  Peak Memory Bandwidth (GB/s): %f\n",
            2.0*prop.memoryClockRate*(prop.memoryBusWidth/8)/1.0e6);
         printf("  Kernel execution timeout: %s\n",  (prop.kernelExecTimeoutEnabled ? "Yes" : "No"));
-        printf("  Concurrent copy and execution: %s\n",  (pro.deviceOverlap ? "Yes" : "No"));
+        printf("  Concurrent copy and execution: %s\n",  (prop.deviceOverlap ? "Yes" : "No"));
         printf("  Concurrent kernels: %s\n",  (prop.concurrentKernels ? "Yes" : "No"));
     }
 
