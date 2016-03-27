@@ -24,7 +24,7 @@ void query_GPUs() {
         printf("  Peak Memory Bandwidth (GB/s): %f\n",
            2.0*prop.memoryClockRate*(prop.memoryBusWidth/8)/1.0e6);
         printf("  Kernel execution timeout: %s\n",  (prop.kernelExecTimeoutEnabled ? "Yes" : "No"));
-        printf("  Concurrent copy and execution: %s\n",  (pro.deviceOverlap ? "Yes" : "No"));
+        printf("  Concurrent copy and execution: %s\n",  (prop.deviceOverlap ? "Yes" : "No"));
         printf("  Concurrent kernels: %s\n",  (prop.concurrentKernels ? "Yes" : "No"));
     }
 
