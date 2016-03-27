@@ -19,7 +19,7 @@ void query_GPUs() {
         printf("  Memory Clock Rate (KHz): %d\n", prop.memoryClockRate);
         printf("  Memory Bus Width (bits): %d\n", prop.memoryBusWidth);
         printf("  Total VRAM (Bytes): %u\n",  prop.totalGlobalMem);
-        printf("  Total constant memory (Bytes): %u\n",  pro.totalConstMem);
+        printf("  Total constant memory (Bytes): %u\n",  prop.totalConstMem);
         printf("  Number of SMs: %d\n", prop.multiProcessorCount);
         printf("  Peak Memory Bandwidth (GB/s): %f\n",
            2.0*prop.memoryClockRate*(prop.memoryBusWidth/8)/1.0e6);
