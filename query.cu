@@ -1,3 +1,4 @@
+// Compile this code with command: nvcc query.cu -o query
 #include <stdio.h>
 /* Print info about connected Nvidia GPUs */
 void query_GPUs() {
